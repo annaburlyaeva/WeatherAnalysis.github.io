@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Visualization Dashboard (Latitude)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:italic|Play:700,regular|PT+Sans:700|Roboto:700&amp;subset=cyrillic-ext,cyrillic" media="all" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html" style="color:white" >Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">             
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="temp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humid.html">Humidity</a>
+            <a class="dropdown-item" href="cloud.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </nav>
+
+
+
+
+    <div class="row">
+
+
+        <div class="col">
+              <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="mt-0">Max Temperature</h4>
+                            <img src="Resources/assets/images/Fig1.png" class="mr-3" height="380" width="510" alt="Max Temperature" align="middle">
+                            <p> 
+                                As expected, the weather becomes significantly warmer as one approaches the equator (Deg. Latitude).
+                                More interestingly, however, is the fact that the southern hemisphere tends to be
+                                warmer this time of the year than the northern hemisphere.
+                                This may be due to the tilt of the earth at the time of the year this data was gathered.  
+                            </p>
+                      </div>
+                  </div>
+              </div>
+        </div>
+
+        <div class="col">
+              <div class="container">
+                  <div class="row">
+                      <div class="col">
+                          <h4 class="mt-0">Visualizations</h4>
+                          <div class="row align-self-center">
+                              <div class="col">
+                                  <a href="temp.html" >
+                                    <img src="Resources/assets/images/Fig1.png" height="160" width="240" alt="Max Temperature" style="border:5px solid #39CCCC">
+                                  </a>
+                              </div>
+                              <div class="col">
+                                  <a href="humid.html">
+                                    <img src="Resources/assets/images/Fig2.png" height="160" width="240" alt="Humidity">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col">
+                                  <a href="cloud.html">
+                                    <img src="Resources/assets/images/Fig3.png" height="160" width="240" alt="Cloudiness">
+                                  </a>
+                              </div>
+                              <div class="col">
+                                  <a href="wind.html">
+                                    <img src="Resources/assets/images/Fig4.png" height="160" width="240" alt="Wind Speed">
+                                  </a>
+                              </div>
+                          </div>
+                      </div>          
+                    </div>         
+              </div>
+        </div>
+    </div>
+
+
+     
+        
+     
+
+</body>
+
+</html>
